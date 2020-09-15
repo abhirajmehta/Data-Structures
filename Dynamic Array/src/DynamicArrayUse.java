@@ -3,27 +3,6 @@ public class DynamicArrayUse {
 
 	public static void main(String[] args) {
 		
-		
-//		DynamicArray<Integer> myArray= new DynamicArray<>();
-//		
-//		myArray.add(2);
-//		myArray.add(4);
-//		myArray.add(6);
-//		myArray.add(2);
-//		myArray.add(4);
-//		myArray.add(6);
-//		myArray.add(2);
-//		myArray.add(4);
-//		myArray.add(6);
-//		myArray.add(2);
-//		myArray.add(4);
-//		myArray.add(6);
-//		
-//		System.out.println(myArray.get(0));
-//		System.out.println(myArray.getSize());
-//		myArray.remove();
-//		System.out.println(myArray.getSize());
-		
 		DynamicArray<Character> myChars = new DynamicArray<Character>();
 		
 		myChars.add('a');
@@ -42,23 +21,10 @@ public class DynamicArrayUse {
 		myChars.add('n');
 		myChars.add('o');
 		
-		System.out.println(myChars.get(0));
-		System.out.println(myChars.getSize());
-		System.out.println(myChars.get(4));
-		System.out.println(myChars.get(5));
-		System.out.println(myChars.get(6));
-		System.out.println(myChars.get(12));
-		myChars.remove();
-		System.out.println(myChars.getSize());
-		myChars.remove();
-		System.out.println(myChars.getSize());
-		myChars.remove();
-		System.out.println(myChars.getSize());
-		myChars.remove();
-		System.out.println(myChars.getSize());
-		myChars.remove();
-		System.out.println(myChars.getSize());
-		myChars.remove();
+		System.out.print(myChars.get(0));
+		System.out.print(myChars.get(1));
+		System.out.print(myChars.get(7));
+		System.out.println(myChars.get(8));
 		System.out.println(myChars.getSize());
 	}
 
