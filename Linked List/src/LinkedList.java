@@ -212,7 +212,7 @@ public class LinkedList<T> {
 		
 	}
 	
-	//print the size
+	//print the list
 	public void printList() {
 		
 		//return if the list empty
