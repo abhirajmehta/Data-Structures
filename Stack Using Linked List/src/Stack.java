@@ -20,6 +20,7 @@ public class Stack<T> {
 			
 			StackNode<T> temp = new StackNode<T>(data);
 			head = temp;
+			head.prev = null;
 			tail = null;
 			
 		//create tail if stack has head	only
@@ -28,11 +29,13 @@ public class Stack<T> {
 			StackNode<T> temp = new StackNode<T>(data);
 			head.next = temp;
 			tail = temp;
+			tail.prev = head;
 			
 		//create a temporary node and assign it as tail of the stack
 		}else {
 			
 			StackNode<T> temp = new StackNode<T>(data);
+			temp.prev = tail;
 			tail.next = temp;
 			tail = tail.next;
 			
@@ -62,18 +65,8 @@ public class Stack<T> {
 		//remove the tail node
 		}else {
 			
-			StackNode<T> temp = new StackNode<T>(head.data);
-			temp = head;
 			removed = tail.data;
-			
-			//Iterate till tail node and assign it as null
-			while(temp.next != tail) {
-				
-				temp = temp.next;
-				
-			}
-			
-			tail = temp;
+			tail = tail.prev;
 			tail.next = null;
 			
 		}
