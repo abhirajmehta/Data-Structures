@@ -76,15 +76,22 @@ public class Stack<T> {
 	
 	}
 	
+	public int size() {
+		
+		return size;
+		
+	}
+	
 	public boolean isEmpty() {
 		
-		if(size == 0) {
-			
-			return true;
-			
-		}
-		
-		return false;
+//		if(size == 0) {
+//			
+//			return true;
+//			
+//		}
+//		
+//		return false;
+		return size == 0;
 		
 	}
 	

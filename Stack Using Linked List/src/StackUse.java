@@ -15,14 +15,17 @@ public class StackUse {
 		System.out.println(myStack.pop());
 		System.out.println(myStack.peek());
 		System.out.println(myStack.pop());
+		System.out.println(myStack.size());
 		System.out.println(myStack.peek());
 		System.out.println(myStack.pop());
 		System.out.println(myStack.peek());
 		System.out.println(myStack.pop());
 		System.out.println(myStack.peek());
+		System.out.println(myStack.size());
 		System.out.println(myStack.pop());
 		System.out.println(myStack.peek());
 		System.out.println(myStack.isEmpty());
-		
+		System.out.println(myStack.size());
+
 	}
 }
