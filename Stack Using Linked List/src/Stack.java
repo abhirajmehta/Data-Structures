@@ -91,6 +91,7 @@ public class Stack<T> {
 //		}
 //		
 //		return false;
+		
 		return size == 0;
 		
 	}
